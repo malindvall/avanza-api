@@ -25,7 +25,6 @@ router.get("/login/bankid", (req, res, next) => {
     .post(URL_LOGIN_START, {})
     .then((response) => {
       console.log(response.data);
-
       res.json(response.data);
     })
     .catch((error) => {

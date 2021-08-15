@@ -10,4 +10,4 @@ How to get started:
 
 3. `npm run start`
 
-4. Go to `localhost:8000/api-docs` and test the 3 endpoints using the Swagger UI
+4. Go to `localhost:3000/api-docs` and test the 3 endpoints using the Swagger UI
