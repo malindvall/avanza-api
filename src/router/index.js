@@ -1,12 +1,15 @@
+const axios = require("axios");
+const bodyParser = require("body-parser");
 const express = require("express");
 const swaggerUi = require("swagger-ui-express");
-const swaggerDocument = require("../docs");
+
 const {
   URL_LOGIN_START,
   URL_LOGIN_COLLECT,
   URL_ACCOUNT_OVERVIEW,
   COOKIE_NAME,
 } = require("constants");
+const swaggerDocument = require("../docs");
 
 const router = express.Router();
 
