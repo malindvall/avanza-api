@@ -1,17 +1,13 @@
 module.exports = {
-  // method of operation
   get: {
-    tags: ["Login Start"], // operation's tag.
+    tags: ["Login Start"],
     description: "Initiate Login",
-    operationId: "loginStart", // unique operation id.
-    parameters: [], // expected params.
-    // expected responses
+    operationId: "loginStart",
+    parameters: [],
     responses: {
-      // response code
       200: {
         description: "Login was initiated",
         content: {
-          // content-type
           "application/json": {
             schema: {
               $ref: "#/components/schemas/LoginTransaction",

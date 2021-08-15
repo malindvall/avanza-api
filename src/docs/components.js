@@ -16,7 +16,7 @@ module.exports = {
             example: "6d0aa05d-85f7-4252-ab8e-8b41b8c9809a",
           },
           expires: {
-            type: "string", // data type
+            type: "string",
             description: "The expiry date of the transactionId",
             example: "2021-08-11T21:57:45.991",
           },
@@ -49,6 +49,10 @@ module.exports = {
             type: "array",
           },
         },
+      },
+      AccountOverview: {
+        type: "object",
+        properties: {},
       },
     },
   },

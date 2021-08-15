@@ -1,8 +1,8 @@
 module.exports = {
   post: {
-    tags: ["Login Status"], // operation's tag.
+    tags: ["Login Status"],
     description: "Collect login status",
-    operationId: "loginCollection", // unique operation id.      summary: "Add a new pet",
+    operationId: "loginCollection",
     requestBody: {
       required: true,
       content: {
@@ -20,7 +20,6 @@ module.exports = {
       },
     },
     responses: {
-      // response code
       200: {
         description: "Login was collected",
         content: {
@@ -28,6 +27,17 @@ module.exports = {
           "application/json": {
             schema: {
               $ref: "#/components/schemas/LoginCollection",
+            },
+          },
+        },
+      },
+      422: {
+        description: "Validation error",
+        content: {
+          // content-type
+          "application/json": {
+            schema: {
+              type: "string",
             },
           },
         },

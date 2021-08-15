@@ -20,14 +20,12 @@ module.exports = {
       },
     },
     responses: {
-      // response code
       200: {
         description: "Account information was collected",
         content: {
-          // content-type
           "application/json": {
             schema: {
-              $ref: "#/components/schemas/LoginCollection", // need to change this
+              $ref: "#/components/schemas/AccountOverview",
             },
           },
         },
