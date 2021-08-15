@@ -8,13 +8,11 @@ const {
   URL_LOGIN_COLLECT,
   URL_ACCOUNT_OVERVIEW,
   COOKIE_NAME,
-} = require("constants");
+} = require("./constants");
 const swaggerDocument = require("../docs");
 
 const router = express.Router();
-
-// create application/json parser
-var jsonParser = bodyParser.json();
+const jsonParser = bodyParser.json(); // parses application/json requests
 
 router.get("/", (req, res, next) => {
   res.json("hello world!");
@@ -32,6 +30,7 @@ router.get("/login/bankid", (req, res, next) => {
     })
     .catch((error) => {
       console.log("ERROR");
+      res.json(error);
     });
 });
 
